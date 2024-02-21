@@ -95,7 +95,7 @@ if(tittle_controller.text != '' && desc_controller.text != ''){
         print(response.body);
         print(response.statusCode);
         EasyLoading.showSuccess("❤️ Data Updated");
-        getAllData();
+        getAllData();      // not dplicate data
         Get.back();
 
       }else{
@@ -116,7 +116,7 @@ if(tittle_controller.text != '' && desc_controller.text != ''){
     if (response.statusCode == 200) {
       print("❌ Note Delete");
       EasyLoading.showError("❌ Note Delete");
-      getAllData();
+      getAllData();     // not dplicate data
       Get.back();
     }else{
       EasyLoading.showError("❌ Note Delete Unsuccessful");
